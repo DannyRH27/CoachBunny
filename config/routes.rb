@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   # INDEX, NEW, CREATE, SHOW, EDIT, UPDATE, DESTROY
   # all  , form, add  , 1   , form, change, remove
   
+  root "static_pages#root"
+  
+  devise_for :users, defaults: {format: :json}, :controllers => { 
+    :omniauth_callbacks => "users/omniauth_callbacks" 
+  }
+
   namespace :api, defaults: {format: :json} do 
     resources :users, only: [:create]
     resources :coaches, only: [:index, :show]
@@ -14,6 +20,6 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]              
   end
 
-  root "static_pages#root"
+
 end
 

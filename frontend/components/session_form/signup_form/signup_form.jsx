@@ -7,7 +7,7 @@ class SignupForm extends React.Component {
     this.state = {
       firstName: '',
       lastName: '',
-      emailAddress: '',
+      email: '',
       password: '',
       zipCode: '',
     };
@@ -27,7 +27,7 @@ class SignupForm extends React.Component {
 
   render() {
     const {
-      firstName, lastName, emailAddress, password, zipCode,
+      firstName, lastName, email, password, zipCode,
     } = this.state;
     // const { errors } = this.props;
 
@@ -52,8 +52,8 @@ class SignupForm extends React.Component {
             <label> Email Address </label>
             <input
               type="text"
-              value={emailAddress}
-              onChange={this.update('emailAddress')}
+              value={email}
+              onChange={this.update('email')}
             />
             <p />
             <label> Password </label>

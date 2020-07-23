@@ -6,7 +6,7 @@ class Account extends React.PureComponent {
   render() {
     const { logout } = this.props;
     const {
-      emailAddress, firstName, lastName, zipCode,
+      email, firstName, lastName, zipCode,
     } = this.props.currentUser;
     return (
       <div className={classes.accountContainer}>
@@ -19,7 +19,7 @@ class Account extends React.PureComponent {
             <div className={classes.userAccount}>
               <ul>
                 <li>{firstName} {lastName}</li>
-                <li>Email: {emailAddress}</li>
+                <li>Email: {email}</li>
                 <li>Zip Code: {zipCode}</li>
               </ul>
               <Link className={classes.logoutButton} to="/" onClick={logout}> Log out </Link>

@@ -166,8 +166,8 @@ coach43 = Coach.create(first_name: "Lula", last_name: "Perez", zip_code: "83569"
   coach_description: "I played center mid for WVU.")
 
 # create users
-user1 = User.create(first_name: "Demo", last_name: "User", password: "demouser", email_address: "demo@demo.com", zip_code: "95070")
-user2 = User.create(first_name: "first", last_name: "last", password: "password", email_address: "test@test.com", zip_code: "95070")
+user1 = User.create(first_name: "Demo", last_name: "User", password: "demouser", email: "demo@demo.com", zip_code: "95070")
+user2 = User.create(first_name: "first", last_name: "last", password: "password", email: "test@test.com", zip_code: "95070")
 
 # create coach details
 CoachDetail.create(coach_id: coach1.id, sport_id: sport2.id, duration: 30, coaching_rate: 120, elite_coach: true, equipment: true, session_description: "I can share with you some of the skills and drills that brought me to where I am.")

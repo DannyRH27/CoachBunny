@@ -4,6 +4,12 @@ import { connect } from 'react-redux';
 import { logIn } from '../../actions/session_actions';
 import classes from './entry_page.module.css';
 
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
 class EntryPage extends React.Component {
   constructor(props) {
     super(props);
@@ -13,7 +19,7 @@ class EntryPage extends React.Component {
   handleClick(e) {
     e.preventDefault();
     const user = {
-      emailAddress: 'demo@demo.com',
+      email: 'demo@demo.com',
       password: 'demouser',
     };
     const { submitForm } = this.props;
@@ -29,6 +35,7 @@ class EntryPage extends React.Component {
           </div>
 
           <button className={classes.myspace} type="button"> Facebook (coming soon)</button>
+          <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>
           <button className={classes.xanga} type="button"> Google (coming soon)</button>
           <Link
             className={classes.demoUserLogin}
