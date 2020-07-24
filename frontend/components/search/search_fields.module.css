@@ -1,0 +1,112 @@
+.searchFieldMain {
+  display: flex;
+  /* background-image: url("https://images.unsplash.com/photo-1540848893531-5eece9a5fa64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+  background-image: url("https://images.unsplash.com/photo-1521731978332-9e9e714bdd20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  align-items: center;
+}
+
+.searchFieldBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 500px;
+  height: 250px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  opacity: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* for dynamic search bar */
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-top:25px;
+}
+
+.searchForm {
+  display: flex;
+  flex-direction: row;
+}
+
+.magGlass {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  margin: 15px;
+}
+
+.search input {
+  font-size: 18px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.search input:focus {
+  border: 1px solid #51af33;
+}
+
+.dropdownContainer > ul{
+  display: block;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  width: 498px;
+  margin-top: -1px;
+
+}
+
+.sportSearchResult {
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+  color: #438e29;
+  font-size: 18px;
+}
+
+.sportSearchResult:hover {
+  background-color: #e3e3e3;
+}
+
+.searchFieldButtons a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px 9px;
+  padding: 0.5em 1.38em 0.5em;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  border: 1px solid #51af33;
+  background-color: white;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: 0.16s;
+  color: hsl(105, 55%, 44%); 
+}
+
+.searchFieldButtons a:hover {
+  color: white; 
+  background-color: #51af33;
+  cursor: pointer;
+}
+
+.searchFieldButtons > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}

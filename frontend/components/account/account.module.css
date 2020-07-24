@@ -1,0 +1,63 @@
+.accountContainer {
+  display: flex;
+  justify-content: center;
+}
+.mainAccount {
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: 50px;
+  width: 700px;
+  padding: 15px 0px 15px 0px;
+  background-color: white;
+}
+
+.mainAccount > H2 {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 15px; */
+}
+
+.userDetails {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-top: 20px;
+}
+.profilePhoto > img {
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.userAccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.userAccount {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.logoutButton {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  padding: 0.5em 1.38em;
+  margin: 15px 0;
+  border-radius: 4px;
+  font-size: 18px;
+  border: 1px solid #b1b9c3;
+  background-color: white;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: 0.16s;
+  color: #545e69; 
+}
+.logoutButton:hover {
+  color: #242a30; 
+  background-color: #e8ebef;
+  cursor: pointer;
+} 

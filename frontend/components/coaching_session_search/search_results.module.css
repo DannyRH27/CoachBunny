@@ -1,0 +1,202 @@
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchResults:first-child {
+  margin-top: 0;
+}
+
+.textLogo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.noCoachesBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2em;
+}
+
+.redoSearch {
+  display: flex;
+  justify-content: center;
+}
+.redoSearchLink{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #51af33;
+  padding: 9.6px 26.5px;
+  width: 250px;
+  color: white;
+  border-radius: 4px;
+  margin: 30px 0 10em 0;
+  font-size: 19.2px;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: 0.16s;
+}
+
+.redoSearchLink:hover {
+  background-color: #438e29;
+  cursor: pointer;
+}
+
+.searchLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 250px;
+  margin-right: 40px;
+}
+
+.searchRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.backgroundCheck {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px 0px #c4c4c4;
+  margin-top: 81px;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  padding: 20px 15px;
+  font-size: large;
+  line-height: 1.3;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px 0px #c4c4c4;
+  margin-top: 30px;
+  width: 100%;
+  background-color: white;
+  height: 120px;
+  padding: 15px;
+}
+
+.filterContainer span {
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+/* Customize the label (the container) */
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lightgrey;
+}
+
+/* When the checkbox is checked, add a green border */
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: white;
+  border: 1px solid #51af33;
+  height: 23px;
+  width: 23px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid green;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.sortContainerMain {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.sortContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.sortContainer > span{
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+} 
+
+.sortContainer:hover {
+  cursor: pointer;
+}
+.sortDropdown {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.sortDropdown option {
+  font-size: 14px;
+}

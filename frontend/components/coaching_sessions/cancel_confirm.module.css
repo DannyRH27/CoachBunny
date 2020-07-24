@@ -1,0 +1,54 @@
+.cancelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cancelBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-top: 30px;
+  width: 400px;
+  background-color: white;
+}
+
+.cancelBody > span {
+  display: flex;
+  width: 80%;
+  margin: 30px;
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.cancelButtons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cancelButtons > button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #51af33;
+  padding: 7px 22px;
+  border-color: #86919d ;
+  width: 35%;
+  color: white;
+  border-radius: 4px;
+  margin: 15px;
+  font-size: 17px;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: 0.16s;
+}
+
+.cancelButtons > button:hover {
+  background-color: #438e29;
+  cursor: pointer;
+}
+

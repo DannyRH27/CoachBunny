@@ -1,0 +1,119 @@
+.splashContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mainSplashBackground {
+  display: flex;
+  /* background-image: url("https://images.unsplash.com/photo-1485313260896-6e6edf486858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
+  background-image: url("https://images.unsplash.com/flagged/photo-1568733278674-2de10ea3ded1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  align-items: center;
+}
+
+.mainSplashText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 95%;
+  width: 500px;
+  height: 250px;
+  padding: 20px 40px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 2em;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.searchForm input {
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSmL2YbVcM4okAWz5mRbVdrhxDY9yk6_hYNrKdd3CYp7MMPfv1L&usqp=CAU'); */
+  height: 18px;
+  width: 50%;
+}
+
+.mainSplashText > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  max-width: 360px;
+  text-align: center;
+}
+
+.reviewStars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainSplashText > h4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  margin-top: 15px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.mainReviewSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 10px;
+}
+
+.mainReviewSection p {
+  margin-left: 10px;
+}
+
+.mainPartner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewPhoto {
+  width: auto;
+  height: 30px;
+}
+
+.deadButton {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5em 1.38em 0.5em;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  border: 1px solid #51af33;
+  background-color: white;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+  transition-duration: 0.16s;
+  color: hsl(105, 55%, 44%); 
+  margin-left: 15px;
+}
+
+.deadButton:hover {
+  color: white; 
+  background-color: #51af33;
+  cursor: pointer;
+}

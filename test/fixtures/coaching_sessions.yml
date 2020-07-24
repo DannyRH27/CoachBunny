@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: coaching_sessions
+#
+#  id                   :bigint           not null, primary key
+#  sport_id             :integer          not null
+#  coach_id             :integer          not null
+#  user_id              :integer          not null
+#  created_at           :datetime         not null
+#  updated_at           :datetime         not null
+#  training_date        :datetime         not null
+#  training_duration    :integer          not null
+#  training_description :text             not null
+#  training_rate        :integer
+#
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: {}
+# column: value
+#
+two: {}
+# column: value

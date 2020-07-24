@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoachBunny</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="CoachBunny" />
+    <meta property="og:image" content="<%= image_url('metalogo.png') %>" />
+    <meta property="og:description" content="Find experienced coaches to help improve your game!" />
+    <meta property="og:url" content="https://coachbunny.herokuapp.com/" />
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link rel="stylesheets" href="reset.css" type="text/css">
+    <link rel="icon" href="<%= image_url('bunny_logo.png') %>">
+
+    <script type="text/javascript">
+      window.textLogo = "<%= image_url('text_logo.png') %>";
+      window.fullLogo2 = "<%= image_url('full_logo.png') %>";
+      window.bunnyLogo = "<%= image_url('bunny_logo.png') %>";
+      window.metaLogo = "<%= image_url('metalogo.png') %>";
+      window.githubLogo = "<%= image_url('github.png') %>";
+      window.linkedinLogo = "<%= image_url('linkedin.png') %>";
+      window.magnifyingGlass = "<%= image_url('magnifying_glass.png') %>";
+      window.mlsLogo = "<%= image_url('mls_logo.png') %>";
+      window.reviewStars = "<%= image_url('5_star_rating.png') %>";
+      window.appStore = "<%= image_url('app_store.png') %>";
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '293662371718596',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v7.0'
+        });
+          
+        FB.AppEvents.logPageView();   
+          
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" 
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=293662371718596&autoLogAppEvents=1">
+    </script>
+
+    <%= yield %>
+  </body>
+</html>
